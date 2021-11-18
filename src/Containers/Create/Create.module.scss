@@ -1,0 +1,59 @@
+.Create {
+  margin-top: 350px;
+
+  &__input_form {
+    height: 75px;
+    width: 1000px;
+    border-left: 9px solid #f17a36;
+    display: flex;
+    background-color: #26262e;
+    font-size: 25px;
+    transition: font-size 0.1s ease-in-out, height 0.1s ease-in-out;
+
+    input {
+      border: none;
+      width: 100%;
+      font-size: 1em;
+      color: #4c4d52;
+      background-color: #26262e;
+    }
+  }
+
+  &__input_scheme {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+    color: #e1e1e1;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and(max-width: 1100px) {
+  .Create {
+    &__input_form {
+      width: 90vw;
+      height: 70px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and(max-height: 1000px) {
+  .Create {
+    margin-top: 240px;
+  }
+}
+
+@media screen and(max-height: 710px) {
+  .Create {
+    margin-top: 150px;
+  }
+}
+
+@media screen and(max-height: 500px) {
+  .Create {
+    margin-top: 100px;
+  }
+}

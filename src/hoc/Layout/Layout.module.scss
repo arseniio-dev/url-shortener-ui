@@ -1,0 +1,14 @@
+.Layout {
+  &__container {
+    height: 100vh;
+  }
+
+  &__Main {
+    display: flex;
+    // height: 100%;
+    // width: 100vw;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

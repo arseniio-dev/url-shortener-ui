@@ -1,0 +1,31 @@
+.Input {
+  height: 75px;
+  width: 400px;
+  border-left: 9px solid #f17a36;
+  display: flex;
+  background-color: #c2c2c4;
+  font-size: 20px;
+  transition: height 0.1s ease-in-out, font-size 0.1s ease-in-out;
+  margin-bottom: 10px;
+
+  input {
+    border: none;
+    width: 100%;
+    font-size: 1em;
+    color: #4c4d52;
+    background-color: transparent;
+    padding-left: 20px;
+  }
+
+  input::placeholder {
+    color: #868484;
+  }
+}
+
+@media screen and(max-width: 1100px) {
+  .Input {
+    width: 90vw;
+    height: 70px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,40 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    img {
+      margin: 35px;
+    }
+  }
+
+  &__nav {
+    margin: 35px;
+
+    a {
+      transition: all .3s ease-in-out;
+      text-decoration: none;
+      color: rgb(220, 220, 220);
+      font-size: 1.3em;
+      margin: 0px 10px;
+      text-transform: capitalize;
+      padding: 10px 35px;
+    }
+  }
+
+  &__space {
+    flex-grow: 2;
+  }
+}
+
+@media screen and(max-width: 600px) {
+  .Header {
+    &__logo {
+      img {
+        margin: 20px;
+      }
+    }
+  }
+}
