@@ -27,6 +27,7 @@ const Auth = () => {
 
   return (
     <FormBuilder
+      buttonText={"Sign In"}
       formFields={regFields}
       onSubmitHandler={(data) => onRegistrationSubmitHandler(data)}
     />

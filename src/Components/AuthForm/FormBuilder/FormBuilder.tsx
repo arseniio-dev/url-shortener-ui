@@ -17,11 +17,16 @@ interface IFormOutputProps {
 type TFormFields = Record<string, IFormField>;
 
 interface IProps {
+  buttonText: string;
   formFields: TFormFields;
   onSubmitHandler: (data: IFormOutputProps) => void;
 }
 
-const FormBuilder = ({ formFields, onSubmitHandler }: IProps): JSX.Element => {
+const FormBuilder = ({
+  formFields,
+  onSubmitHandler,
+  buttonText,
+}: IProps): JSX.Element => {
   const createFormObject = (formFields: TFormFields): IFormOutputProps => {
     return Object.fromEntries(
       Object.entries(formFields).map(
@@ -63,7 +68,7 @@ const FormBuilder = ({ formFields, onSubmitHandler }: IProps): JSX.Element => {
           />
         );
       })}
-      <button type={"submit"}>SUBMIT</button>
+      <button type={"submit"}>{buttonText}</button>
     </form>
   );
 };
