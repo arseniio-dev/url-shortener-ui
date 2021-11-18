@@ -1,5 +1,6 @@
 import React, { ChangeEvent, useState } from "react";
 import Input from "../../UI/Input/Input";
+import LargeButton from "../../UI/LargeButton/LargeButton";
 
 interface IFormField {
   type: string;
@@ -68,7 +69,7 @@ const FormBuilder = ({
           />
         );
       })}
-      <button type={"submit"}>{buttonText}</button>
+      <LargeButton type={"submit"}>{buttonText}</LargeButton>
     </form>
   );
 };
